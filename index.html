@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'Inscription</title>
+    <style>
+        body {
+            background-color: #000000; /* Fond noir */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .btn-green {
+            background-color: green;
+        }
+
+        .btn-red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulaire d'Inscription</h2>
+        <form action="#" method="post">
+            <label for="nom">Entrez votre Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Entrez votre Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+
+            <label>Indiquez votre sexe :</label>
+            <div class="radio-group">
+                <input type="radio" id="feminin" name="sexe" value="feminin">
+                <label for="feminin">Féminin</label>
+                <input type="radio" id="masculin" name="sexe" value="masculin" checked>
+                <label for="masculin">Masculin</label>
+                <input type="radio" id="neant" name="sexe" value="neant">
+                <label for="neant">Je préfère ne rien dire</label>
+            </div>
+
+            <label for="pays">Quel est votre pays d'origine ?</label>
+            <select id="pays" name="pays">
+                <option value="cameroun" selected>Cameroun</option>
+                <!-- Ajouter d'autres pays si besoin -->
+            </select>
+
+            <label for="infos">Parlez-nous un peu plus de vous :</label>
+            <textarea id="infos" name="infos" rows="4"></textarea>
+
+            <div class="buttons">
+                <button type="submit" class="btn btn-green">Envoyer</button>
+                <button type="reset" class="btn btn-red">Réinitialiser</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
