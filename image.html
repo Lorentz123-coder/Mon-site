@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie de Photos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #4E342E, #D7CCC8); /* Dégradé marron masculin */
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 10px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .name {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Galerie de photos</h1>
+    <div class="gallery">
+      <div class="card">
+        <img src="IMG_20250602_094416_691.jpg"" alt="Casa de papel S1💥">
+        <div class="name">CASA DE PAPEL S1</div> </div>
+      </div>
+      <div class="card">
+        <img src="IMG_20250602_094408_929.jpg" alt="Casa de papel S2💥">
+        <div class="name">CASA DE PAPEL S2</div>
+      </div>
+      <div class="card">
+        <img src="IMG_20250602_094401_797.jpg" alt="Casa de papel S3💥">
+        <div class="name">CASA DE PAPEL S3</div>
+      </div>
+      <div class="card">
+        <img src="IMG_20250602_094354_801.jpg" alt="Casa de papel S4">
+        <div class="name">CASA DE PAPEL S4</div>
+      </div>
+      <div class="card">
+        <img src="IMG_20250602_094348_980.jpg" alt="Casa de papel S5💥">
+        <div class="name">CASA DE PAPEL S5</div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</body>
+</html>
