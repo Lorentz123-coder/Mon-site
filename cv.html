@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon CV</title>
+  <meta charset='utf-8'>
+  <link href='style.css' rel='stylesheet' type='text/css'/>
+  <style>
+    body {
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+      background-image: url("image-cv.png");
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    a {
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .left-column, .right-column {
+      padding: 20px;
+    }
+
+    .left-column {
+      width: 35%;
+      background-color: #2e7d32;
+      color: white;
+    }
+
+    .right-column {
+      width: 65%;
+      background-color: #ffffff;
+    }
+
+    .photo-cv {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 10px;
+      line-height: 1.6em;
+    }
+
+    h1, h2, h3 {
+      color: #2e7d32;
+    }
+
+    .left-column h1 {
+      color: white;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .experience, .portfolio {
+      padding-left: 10px;
+    }
+
+    ul.skills {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.skills li {
+      display: inline-block;
+      background: #ecf0f1;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 4px;
+    }
+
+    li {
+      color: #333;
+    }
+
+    .projet {
+      margin-bottom: 15px;
+    }
+
+    .projet a {
+      text-decoration: none;
+      color: #66bb6a;
+    }
+
+    .left-column a {
+      color: #66bb6a;
+      text-decoration: none;
+    }
+
+    .left-column a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Colonne gauche -->
+    <div class="left-column">
+      <img src="photo.jpg" alt="Photo de moi" class="photo-cv">
+      <h1>LORENTZ JACK NGANBE</h1>
+      <div class="contact">
+        📍 Douala, Cameroun<br>
+        📞 683768368<br>
+        📧 lorentzjack57@gmail.com<br>
+      </div>
+
+      <section>
+        <h2 class="section-title">Profil</h2>
+        <p>"Passionné par l’informatique et curieux d’apprendre, je m’intéresse aux nouvelles technologies, surtout dans le domaine des systèmes automatisés. Je suis motivé, sérieux et toujours prêt à relever de nouveaux défis."</p>
+      </section>
+    </div>
+
+    <!-- Colonne droite -->
+    <div class="right-column">
+      <section>
+        <h2 class="section-title">Mon Parcours scolaire</h2>
+        <div class="experience">
+          <h3>CEP - ANGE DU ROYAUME</h3>
+          <p><em>Août 2018 | Douala, Pk11</em></p>
+          <h3>BEPC - LYCÉE DE NDOG-HEM</h3>
+          <p><em>Août 2021 | Douala, PK11</em></p>
+          <h3>Probatoire ESG Série C - LYCÉE DE NDOG-HEM</h3>
+          <p><em>Août 2023 | Douala, PK11</em></p>
+          <h3>Baccalauréat ESG Série C - LYCÉE DE NDOG-HEM</h3>
+          <p><em>Août 2024 | Douala, PK11</em></p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">SAVOIR & FAIRE</h2>
+        <ul>
+          <li>Bonne capacité d’analyse et de résolution de problèmes</li>
+          <li>Maîtrise des bases de l’algorithmique</li>
+          <li>Esprit logique et rigoureux dans la programmation</li>
+          <li>Connaissances en conception d’interfaces web (HTML/CSS/JavaScript)</li>
+          <li>Excellente communication en français et en anglais</li>
+          <li>Motivation à apprendre de nouvelles technologies rapidement</li>
+        </ul>
+      </section>
+
+      <section id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="projet">
+          <h3>Projet 1 : Affichage d'un message en Python
+Un petit programme qui affiche un message personnalisé (ex : "Bienvenue dans mon programme !").
+</h3>
+        </div>
+        <div class="projet">
+          <h3>Projet 2 : Compteur de clics en JavaScript
+Une page web avec un bouton, et chaque fois qu'on clique, le chiffre augmente.
+
+</h3>
+        </div>
+        <div class="projet">
+          <h3>Projet 3 : Page HTML de présentation
+Une simple page avec ton nom, ta photo, une description, et des couleurs que tu aimes.
+</h3>
+        </div>
+        <div class="projet">
+          <h3>Projet 4 : Calculatrice très simple
+Un programme Python qui fait juste l'addition et la soustraction de deux nombres.
+</h3>
+        </div>
+        <div class="projet">
+          <h3>Projet 5 : Tableau avec des couleurs
+Une page HTML qui affiche un tableau de couleurs (utilisation de <table> et <style>).
+</h3>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    alert('Bonjour et bienvenue sur mon CV en ligne !');
+  </script>
+</body>
+</html>
